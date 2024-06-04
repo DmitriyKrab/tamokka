@@ -1,0 +1,60 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(font.otf);
+
+}
+
+@font-face {
+    font-family: myseconffont;
+    src: url(fonta.otf)
+}
+  
+.main {
+    text-align: center;
+    font-family: myFirstFont;
+    color: #ffebf9;
+    line-height: 0.1;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery a {
+    margin: 10px;
+}
+.gallery img {
+    width: 512px;
+    height: 512px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 1s;
+    border: 6px solid #ffebf9;
+    border-radius: 5%;
+    margin-right: 32px;
+
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    border-radius: 5%;
+
+}
+
+.under{
+    text-align: center;
+    font-family: myseconffont;
+    color: #ffebf9;
+    line-height: 0.1;
+    margin-top: 64px;
+    font-size: 32px;
+}
+
+.maina{
+    text-align: center;
+    font-family: myFirstFont;
+    color: #ffebf9;
+    line-height: 0.1;
+    margin-top: 540px;
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<body style="background-color:#ffb0e7;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Квест с Томочкой</title>
+    <style>
+        video {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" margin-top: 64px;">
+        <h1>Задание 2 <p> Найди настоящую Булку :3</h1>
+    </div>
+    <div class="gallery">
+        <img src="6.png" alt="Булка" id="thumbnail"></a>
+        <img src="5.png" alt="Булка" id="thumbnail1"></a>
+        <img src="4.png" alt="Булка" id="thumbnail2"></a>
+    </div>
+    <video id="video" controls>
+        <source src="boss.mp4">
+    </video>
+    <audio id="audio">
+        <source src="music1.mp3">
+    </audio>
+    
+    <script>
+        document.getElementById('thumbnail').onclick = function() {
+            var video = document.getElementById('video');
+            var audio = document.getElementById('audio');
+
+            video.style.display = 'block';
+            video.play();
+            audio.play();
+
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) { // Firefox
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { // IE/Edge
+                video.msRequestFullscreen();
+            }
+        };
+
+        document.getElementById('thumbnail1').onclick = function() {
+            var video = document.getElementById('video');
+            var audio = document.getElementById('audio');
+
+            video.style.display = 'block';
+            video.play();
+            audio.play();
+
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) { // Firefox
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { // IE/Edge
+                video.msRequestFullscreen();
+            }
+        };
+        window.onbeforeunload = function() {
+            return "Закрыть сайт? Изменения могут не сохраниться.";
+        };
+        document.getElementById('thumbnail2').onclick = function() {
+            var video = document.getElementById('video');
+            var audio = document.getElementById('audio');
+
+            video.style.display = 'block';
+            video.play();
+            audio.play();
+
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) { // Firefox
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { // IE/Edge
+                video.msRequestFullscreen();
+            }
+        };
+    </script>
+</body>
+</html>
